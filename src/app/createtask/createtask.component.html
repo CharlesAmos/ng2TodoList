@@ -1,0 +1,28 @@
+<div class="container">
+<!--field to add new task-->
+  <div class="container-fluid"> 
+    <div class="form-group">
+      <label for="titletask" style="display: inline-block;">Task Title</label>
+      <input style="display: inline-block; width: 20em; margin-left:1em;" class="form-control"[(ngModel)]="title" id="titletask" name="title" type="text" placeholder="Enter Your Task">
+    </div>
+    <div class="form-group">
+      <label style="display: inline-block;">Description</label>
+      <textarea style="display: inline-block; resize: none;" rows="2" cols="38" [(ngModel)]="description" name="description" type="text" placeholder="Describe Your Task"></textarea>
+    </div>
+    <button style="margin-left:20em;" class="btn btn-success" type="submit" (click)="addtask(title, description)">Add Task</button>
+  </div><br>
+  <div style="width:30em;"><hr></div>
+<!--field to display task-->
+  <div *ngIf="y==true">
+    <div *ngFor="let x of task">
+      <input type="checkbox" name="task" value="description" style="display: inline-block;">
+      <span style="display: inline-block;">
+        <em><h5 style="display: inline-block;">Task: </h5></em> <p style="display: inline-block;">{{x.title}}</p>
+      </span><br>
+        <em><h5 style="display: inline-block;">Description: </h5></em> <p style="display: inline-block;">{{x.description}}</p><br>
+        <button class="btn btn-danger" (click)="deleteTask(x)">Delete Task</button>
+      <div style="width:30em;"><hr></div>
+    </div>
+  </div>
+
+</div>
