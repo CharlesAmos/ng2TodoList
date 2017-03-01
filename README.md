@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TheApp
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.26.
@@ -29,3 +30,7 @@ Run `ng github-pages:deploy` to deploy to GitHub Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+=======
+# ng2TodoList
+This is a simple todo list App with minimal features.
+>>>>>>> 6548b059f1a43d49adf9cbdb38c17922b967eb16
